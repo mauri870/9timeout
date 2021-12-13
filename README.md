@@ -2,6 +2,10 @@
 
 > Just like timeout(1).
 
+```sh
+mk install
+```
+
 ```
 usage: timeout [duration [command ...]]
 ```
