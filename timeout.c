@@ -111,6 +111,8 @@ threadmain(int argc, char **argv)
 			DPRINT(2, "Command timed out");
 			kill(execpid);
 			exitmsg = "timeout";
+		} else if (wmsg->pid == execpid) {
+			kill(timeoutpid);
 		}
 
 		free(wmsg);
